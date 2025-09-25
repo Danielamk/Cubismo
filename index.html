@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cubismo | Inicio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      background: #fff;
+      color: #181818;
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+    .landing-menu {
+      display: flex;
+      justify-content: center;
+      gap: 64px;
+      font-size: 1.18rem;
+      letter-spacing: 0.08em;
+      margin-top: 32px;
+      margin-bottom: 18px;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+    .landing-menu a {
+      color: #181818;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color .18s;
+      padding: 0 8px;
+    }
+    .landing-menu a:hover {
+      color: #0077ff;
+    }
+    .landing-title {
+      font-family: 'Russo One', Arial, sans-serif;
+      font-size: clamp(3.5rem, 10vw, 7.5rem);
+      letter-spacing: 0.22em;
+      text-align: center;
+      margin: 0 0 8px 0;
+      font-weight: 700;
+      width: 100vw;
+    }
+    .landing-sub {
+      text-align: center;
+      font-size: 1.15rem;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+      color: #222;
+      width: 100vw;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+    .landing-hr {
+      border: none;
+      border-top: 2px solid #bbb;
+      margin: 0 0 18px 0;
+      width: 98vw;
+      max-width: 1200px;
+    }
+    .landing-img-row {
+      display: flex;
+      align-items: stretch;
+      margin: 0 auto;
+      gap: 0;
+      width: 98vw;
+      max-width: 1200px;
+      min-height: 160px;
+    }
+    .landing-img {
+      width: 70%;
+      object-fit: cover;
+      border: none;
+      border-radius: 0;
+      min-height: 160px;
+      max-height: 220px;
+      background: #eee;
+      display: block;
+    }
+    .landing-block {
+      width: 30%;
+      background: #ffe14a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 160px;
+      max-height: 220px;
+    }
+    .landing-block-text {
+      font-family: 'Russo One', Arial, sans-serif;
+      font-size: 1.08rem;
+      color: #181818;
+      letter-spacing: 0.14em;
+      text-align: center;
+      font-weight: 700;
+      line-height: 1.3;
+      display: block;
+      text-transform: uppercase;
+    }
+    @media (max-width: 900px) {
+      .landing-menu { gap: 24px; font-size: 1rem; }
+      .landing-title { font-size: 2.2rem; }
+      .landing-img-row { flex-direction: column; min-height: 100px; }
+      .landing-img, .landing-block { width: 100%; max-height: 120px; min-height: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="landing-menu">
+    <a href="#home" class="nav-home">Home</a>
+    <a href="#">Introducción</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="galeria.html">Obras</a>
+    <a href="#">Filosofía</a>
+  </nav>
+  <h1 class="landing-title">EL CUBISMO</h1>
+  <hr class="landing-hr" />
+  <div class="landing-img-row" id="home">
+    <img class="landing-img" src="https://i0.wp.com/artesublime.com.mx/wp-content/uploads/2024/10/7638588-scaled.jpg?fit=2560%2C1707&ssl=1" alt="Obra cubista principal" />
+    <div class="landing-block">
+      <span class="landing-block-text">
+        Romper las reglas<br>
+        para crear nuevas<br>
+        miradas
+      </span>
+    </div>
+  </div>
+  <div class="landing-sub" style="margin-bottom: 38px;">1907 – 1917 | Una vanguardia que transformó el arte moderno</div>
+
+  <!-- Sección Cubismo y Artistas -->
+  <section class="cubismo-section">
+    <div class="cubismo-row cubismo-row-equal">
+      <div class="cubismo-block-group">
+        <div class="cubismo-block cubismo-block-white">
+          <h2 class="cubismo-title">¿Qué es el Cubismo?</h2>
+          <p class="cubismo-text">
+            El Cubismo fue una de las vanguardias más influyentes del siglo XX, surgida en París entre 1907 y 1917 gracias a Pablo Picasso y Georges Braque. Su propuesta rompió con la perspectiva tradicional al fragmentar la realidad en figuras geométricas y mostrar un objeto desde múltiples puntos de vista. Este movimiento abrió las puertas al arte moderno e influyó en la pintura, la escultura, el diseño y la arquitectura.
+          </p>
+        </div>
+        <div class="cubismo-block-img cubismo-block-img-below">
+          <img src="https://i.pinimg.com/736x/3f/a5/e9/3fa5e9b2e8b179b65b53b3b8420b83d9.jpg" alt="Retrato cubista" />
+        </div>
+      </div>
+      <div class="cubismo-block-group">
+        <div class="cubismo-block-img">
+          <img src="https://i.pinimg.com/736x/de/dd/76/dedd769c100ed3b1a0cf84fba0f20bfe.jpg" alt="Obra cubista representativa" />
+        </div>
+        <div class="cubismo-block cubismo-block-white cubismo-block-white-below">
+          <h2 class="cubismo-title">Artistas principales</h2>
+          <p class="cubismo-text">
+            Entre los grandes exponentes del Cubismo destacan:<br><br>
+            <strong>Pablo Picasso</strong> (1881–1973): Fundador del movimiento, creador de Les Demoiselles d’Avignon.<br><br>
+            <strong>Georges Braque</strong> (1882–1963): Co-creador, aportó la geometrización y los tonos sobrios del cubismo analítico.<br><br>
+            <strong>Juan Gris</strong> (1887–1927): Pintor español que llevó el cubismo hacia una versión más ordenada y colorida, característica del cubismo sintético.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <footer class="site-footer">
+    <div class="footer-content">
+      <span>© 2025 Cubismo. Todos los derechos reservados.</span>
+      <span class="footer-links">
+        <a href="#home">Home</a> ·
+        <a href="artistas.html">Artistas</a> ·
+        <a href="galeria.html">Obras</a> ·
+        <a href="contacto.html">Contacto</a>
+      </span>
+    </div>
+  </footer>
+  <style>
+    .site-footer {
+      width: 100vw;
+      background: #181818;
+      color: #fff;
+      padding: 32px 0 18px 0;
+      text-align: center;
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 1.08rem;
+      margin-top: 48px;
+    }
+    .footer-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .footer-links {
+      color: #ffe14a;
+      font-size: 1.08rem;
+    }
+    .footer-links a {
+      color: #ffe14a;
+      text-decoration: none;
+      margin: 0 4px;
+      transition: color .18s;
+    }
+    .footer-links a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .nav-home {
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 1.3rem;
+      color: #C1442E;
+      text-decoration: none;
+      margin-right: 32px;
+      letter-spacing: 0.08em;
+      padding: 6px 18px;
+      border-radius: 8px;
+      transition: background .18s, color .18s;
+      font-weight: 700;
+    }
+    .nav-home:hover {
+      background: #C1442E;
+      color: #fff;
+    }
+
+    .cubismo-section {
+      background: #C1442E;
+      padding: 48px 0 36px 0;
+      width: 100vw;
+      box-sizing: border-box;
+      margin-top: 38px;
+    }
+    .cubismo-row {
+      display: flex;
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .cubismo-row-equal > .cubismo-block-group {
+      flex: 1 1 420px;
+      min-width: 320px;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+    .cubismo-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .cubismo-block-white {
+      background: #fff;
+      border-radius: 22px;
+      box-shadow: 0 4px 24px #0002;
+      padding: 36px 32px 28px 32px;
+      min-height: 260px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cubismo-block-white-below {
+      margin-top: 0;
+    }
+    .cubismo-block-img {
+      background: none;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      width: 100%;
+      display: flex;
+    }
+    .cubismo-block-img img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      max-width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px #0003;
+      background: #fff;
+      object-fit: cover;
+      display: block;
+      min-height: 180px;
+    }
+    .cubismo-block-img-below {
+      margin-top: 0;
+    }
+    .cubismo-title {
+      font-family: 'Bebas Neue', Arial, sans-serif;
+      font-size: 2.2rem;
+      color: #C1442E;
+      letter-spacing: 0.13em;
+      margin: 0 0 18px 0;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .cubismo-text {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 1.13rem;
+      color: #222;
+      margin: 0;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+    }
+    @media (max-width: 900px) {
+      .cubismo-row, .cubismo-row-equal {
+        flex-direction: column;
+        gap: 32px;
+        max-width: 98vw;
+      }
+      .cubismo-block-group {
+        max-width: 98vw;
+        gap: 18px;
+      }
+      .cubismo-block-white, .cubismo-block-img {
+        max-width: 98vw;
+        min-width: 0;
+        width: 100%;
+      }
+      .cubismo-block-img img {
+        max-width: 98vw;
+        min-height: 120px;
+      }
+    }
+    /* Espacio entre la franja amarilla y la sección roja */
+    .landing-img-row {
+      margin-bottom: 38px;
+    }
+    .intro-block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 32px;
+      width: 100vw;
+      max-width: none;
+      margin: 56px 0 0 0;
+      padding: 0 0 32px 0;
+      box-sizing: border-box;
+    }
+    .intro-img-col {
+      flex: 0 0 320px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 220px;
+      min-width: 220px;
+      max-width: 420px;
+      margin: 0;
+      padding: 0;
+    }
+    .intro-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 4px 32px #0002;
+      background: #eee;
+      margin: 0;
+      border: none;
+      display: block;
+    }
+    .intro-text-col {
+      flex: 1 1 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      min-width: 220px;
+      max-width: 600px;
+    }
+    .intro-title {
+      font-family: 'Russo One', Arial, sans-serif;
+      font-size: 2.6rem;
+      letter-spacing: 0.22em;
+      margin: 0 0 12px 0;
+      font-weight: 700;
+      color: #181818;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    .intro-desc {
+      font-size: 1.08rem;
+      color: #222;
+      letter-spacing: 0.13em;
+      line-height: 1.6;
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      text-align: left;
+      max-width: 520px;
+    }
+    @media (max-width: 900px) {
+      .intro-block { flex-direction: column; gap: 18px; align-items: stretch; width: 100vw; }
+      .intro-img-col { max-width: 100vw; min-width: 0; width: 100vw; height: 160px; justify-content: center; }
+      .intro-img { width: 100vw; height: 160px; border-radius: 0; }
+      .intro-title { font-size: 2rem; }
+    }
+  </style>
+</html>
